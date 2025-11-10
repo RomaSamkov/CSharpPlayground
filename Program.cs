@@ -1,2 +1,14 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace CSharpPlayground
+// This is a simple C# program
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.WriteLine("Hello, World!");
+            Console.Read();
+        }
+    }
+}
