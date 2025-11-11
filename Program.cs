@@ -7,15 +7,26 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            int number = 12;
-            uint num1 = 10;
-            byte num2 = 20;
-            long bigNumber = 123456;
+            // int number = 12;
+            // uint num1 = 10;
+            // byte num2 = 20;
+            // long bigNumber = 123456;
+            // float num3 = 12.5f;
+            // double num4 = 15.99;
+            // string word = "Hello, C#!";
+            // char letter = 'C';
+            // bool isHappy = true;
 
-            Console.WriteLine(num1 + num2 + bigNumber);
-            Console.WriteLine(number);
-            number = 41;
-            Console.WriteLine("Result: " + number);
+            int user1, user2;
+
+            user1 = Convert.ToInt32(Console.ReadLine());
+            user2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Result: " + user1 + ". Result: " + user2);
+
+
+
+
         }
     }
 }
