@@ -7,13 +7,18 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            Console.WriteLine("Enter number (radius): ");
-            float radius = float.Parse(Console.ReadLine());
-            double area = Math.PI * Math.Pow(radius, 2);
+            Console.WriteLine("Enter number: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+            if (number >= 5)
+            {
+                Console.WriteLine("Number is five or greater");
+            }
+            else
+            {
+                Console.WriteLine("Number is less than five");
+            }
 
-            Console.WriteLine(Math.PI);
 
-            Console.WriteLine("Result: " + Math.Round(area));
 
 
 
