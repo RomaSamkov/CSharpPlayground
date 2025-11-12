@@ -7,20 +7,21 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            Console.WriteLine("Enter number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            if (number >= 5)
+            Console.WriteLine("Enter login: ");
+            string login = Console.ReadLine();
+            if (login == "Admin")
             {
-                Console.WriteLine("Number is five or greater");
+                Console.WriteLine("Welcome, Admin!");
+                Console.WriteLine("Enter name: ");
+                string name = Console.ReadLine();
+                Console.WriteLine("Enter your age: ");
+                int age = int.Parse(Console.ReadLine());
+                Console.WriteLine("Hello, {0}. Your age is {1}.", name, age);
             }
             else
             {
-                Console.WriteLine("Number is less than five");
+                Console.WriteLine("Access denied.");
             }
-
-
-
-
 
 
         }
