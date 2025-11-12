@@ -7,22 +7,13 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            // int number = 12;
-            // uint num1 = 10;
-            // byte num2 = 20;
-            // long bigNumber = 123456;
-            // float num3 = 12.5f;
-            // double num4 = 15.99;
-            // string word = "Hello, C#!";
-            // char letter = 'C';
-            // bool isHappy = true;
+            Console.WriteLine("Enter number (radius): ");
+            float radius = float.Parse(Console.ReadLine());
+            double area = Math.PI * Math.Pow(radius, 2);
 
-            int user1, user2;
+            Console.WriteLine(Math.PI);
 
-            user1 = Convert.ToInt32(Console.ReadLine());
-            user2 = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Result: " + user1 + ". Result: " + user2);
+            Console.WriteLine("Result: " + Math.Round(area));
 
 
 
