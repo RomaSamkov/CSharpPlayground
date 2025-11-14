@@ -7,20 +7,28 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            Console.WriteLine("Enter login: ");
-            string login = Console.ReadLine();
-            if (login == "Admin")
+            Console.WriteLine("Please enter a number or login.");
+            string user_input = Console.ReadLine() ?? string.Empty;
+
+            switch (user_input)
+
             {
-                Console.WriteLine("Welcome, Admin!");
-                Console.WriteLine("Enter name: ");
-                string name = Console.ReadLine();
-                Console.WriteLine("Enter your age: ");
-                int age = int.Parse(Console.ReadLine());
-                Console.WriteLine("Hello, {0}. Your age is {1}.", name, age);
-            }
-            else
-            {
-                Console.WriteLine("Access denied.");
+                case "Admin":
+                    Console.WriteLine("Welcome, Admin!");
+                    break;
+                case "6":
+                    Console.WriteLine("You selected option 6");
+                    break;
+                case "12":
+                    Console.WriteLine("You selected option 12");
+                    break;
+                case "31":
+                    Console.WriteLine("You selected option 31");
+                    break;
+                default:
+                    Console.WriteLine("You selected default");
+                    break;
+
             }
 
 
