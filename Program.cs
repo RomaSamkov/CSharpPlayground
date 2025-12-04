@@ -7,30 +7,33 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            Console.WriteLine("Please enter a number or login.");
-            string user_input = Console.ReadLine() ?? string.Empty;
-
-            switch (user_input)
-
+            for (int i = 0; i < 10; i++)
             {
-                case "Admin":
-                    Console.WriteLine("Welcome, Admin!");
-                    break;
-                case "6":
-                    Console.WriteLine("You selected option 6");
-                    break;
-                case "12":
-                    Console.WriteLine("You selected option 12");
-                    break;
-                case "31":
-                    Console.WriteLine("You selected option 31");
-                    break;
-                default:
-                    Console.WriteLine("You selected default");
-                    break;
-
+                if (i % 2 == 0) continue;
+                Console.WriteLine("Number: " + i);
             }
-
+            // int i = 0;
+            // while (i < 10)
+            // {
+            //     Console.WriteLine("Number: " + i);
+            //     i++;
+            // }
+            // bool isAdmin = false;
+            // while (!isAdmin)
+            // {
+            //     Console.Write("Write name: ");
+            //     string name = Console.ReadLine();
+            //     if (name == "Admin")
+            //     {
+            //         isAdmin = true;
+            //     }
+            // }
+            // int i = 0;
+            // do
+            // {
+            //     Console.WriteLine("Number: " + i);
+            //     i++;
+            // } while (i < 10);
 
         }
     }
