@@ -7,33 +7,19 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            for (int i = 0; i < 10; i++)
+            byte[] nums = new byte[5];
+            nums[0] = 1;
+            nums[1] = 2;
+            nums[2] = 3;
+            nums[3] = 4;
+            nums[4] = 5;
+
+            string[] names = { "Alice", "Bob", "Charlie" };
+
+            for (byte i = 0; i < names.Length; i++)
             {
-                if (i % 2 == 0) continue;
-                Console.WriteLine("Number: " + i);
+                Console.WriteLine(names[i]);
             }
-            // int i = 0;
-            // while (i < 10)
-            // {
-            //     Console.WriteLine("Number: " + i);
-            //     i++;
-            // }
-            // bool isAdmin = false;
-            // while (!isAdmin)
-            // {
-            //     Console.Write("Write name: ");
-            //     string name = Console.ReadLine();
-            //     if (name == "Admin")
-            //     {
-            //         isAdmin = true;
-            //     }
-            // }
-            // int i = 0;
-            // do
-            // {
-            //     Console.WriteLine("Number: " + i);
-            //     i++;
-            // } while (i < 10);
 
         }
     }
