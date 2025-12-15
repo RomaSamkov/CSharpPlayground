@@ -14,7 +14,7 @@ namespace CSharpPlayground
             nums[3] = 4;
             nums[4] = 5;
 
-            string[] names = { "Alice", "Bob", "Charlie" };
+            string[] names = ["Alice", "Bob", "Charlie"];
 
             for (byte i = 0; i < names.Length; i++)
             {
