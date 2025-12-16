@@ -7,19 +7,18 @@ namespace CSharpPlayground
     {
         static void Main()
         {
-            byte[] nums = new byte[5];
-            nums[0] = 1;
-            nums[1] = 2;
-            nums[2] = 3;
-            nums[3] = 4;
-            nums[4] = 5;
+            short[] numbers = new short[10];
+            short sum = 0;
 
-            string[] names = ["Alice", "Bob", "Charlie"];
+            Random random = new Random();
 
-            for (byte i = 0; i < names.Length; i++)
+            for (byte i = 0; i < numbers.Length; i++)
             {
-                Console.WriteLine(names[i]);
+                numbers[i] = Convert.ToInt16(random.Next(-50, 50));
+                Console.WriteLine("El: " + numbers[i]);
+                sum += numbers[i];
             }
+            Console.WriteLine("Sum: " + sum);
 
         }
     }
